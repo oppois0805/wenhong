@@ -1,0 +1,26 @@
+/* ==========================================================================
+   base
+   ========================================================================== */
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-heading {
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}

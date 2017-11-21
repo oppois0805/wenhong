@@ -1,0 +1,60 @@
+extends templates/_layout.pug
+
+block main
+	.bg-faded.p-4.my-4
+		hr.divider
+		h2.text-center.text-lg.text-uppercase.my-0
+			strong 產品項目
+		hr.divider
+		// Image Carousel
+		#carouselExampleIndicators.carousel.slide(data-ride="carousel")
+			ol.carousel-indicators
+				li.active(data-target="#carouselExampleIndicators", data-slide-to="0")
+				li(data-target="#carouselExampleIndicators", data-slide-to="1")
+				li(data-target="#carouselExampleIndicators", data-slide-to="2")
+			.carousel-inner(role="listbox")
+				.carousel-item.active
+					img.d-block.img-fluid.w-100(src="images/旗魚脯.jpg", alt="")
+					.carousel-caption.d-none.d-md-block
+						h3.text-shadow 旗魚脯
+						p.text-shadow This is the caption for the first slide.
+				.carousel-item
+					img.d-block.img-fluid.w-100(src="images/旗魚顆粒.jpg", alt="")
+					.carousel-caption.d-none.d-md-block
+						h3.text-shadow 旗魚顆粒
+						p.text-shadow This is the caption for the second slide.
+				.carousel-item
+					img.d-block.img-fluid.w-100(src="images/旗魚鬆.jpg", alt="")
+					.carousel-caption.d-none.d-md-block
+						h3.text-shadow 旗魚鬆
+						p.text-shadow This is the caption for the third slide.
+			a.carousel-control-prev(href="#carouselExampleIndicators", role="button", data-slide="prev")
+				span.carousel-control-prev-icon(aria-hidden="true")
+				span.sr-only Previous
+			a.carousel-control-next(href="#carouselExampleIndicators", role="button", data-slide="next")
+				span.carousel-control-next-icon(aria-hidden="true")
+				span.sr-only Next
+	.bg-faded.p-4.my-4
+		hr.divider
+		h2.text-center.text-lg.text-uppercase.my-0
+			strong 傳承50年的魚鬆專家
+		hr.divider
+		img.img-fluid.float-left.mr-4.d-none.d-lg-block(src="img/intro-pic.jpg", alt="")
+		p
+			| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta dolore voluptatem, deleniti dignissimos excepturi veritatis cum hic sunt perferendis ipsum perspiciatis nam officiis sequi atque enim ut! Velit, consectetur.
+		p
+			| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam pariatur perspiciatis reprehenderit illo et vitae iste provident debitis quos corporis saepe deserunt ad, officia, minima natus molestias assumenda nisi velit?
+		p
+			| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam libero expedita magni est delectus pariatur aut, aperiam eveniet velit cum possimus, autem voluptas. Eum qui ut quasi voluptate blanditiis?
+	.bg-faded.p-4.my-4
+		hr.divider
+		h2.text-center.text-lg.text-uppercase.my-0
+			strong 吃的滿意、吃的健康
+		hr.divider
+		p
+			| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta dolore voluptatem, deleniti dignissimos excepturi veritatis cum hic sunt perferendis ipsum perspiciatis nam officiis sequi atque enim ut! Velit, consectetur.
+		p
+			| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam pariatur perspiciatis reprehenderit illo et vitae iste provident debitis quos corporis saepe deserunt ad, officia, minima natus molestias assumenda nisi velit?
+block script
+	script(type='text/javascript').
+		$('.carousel').carousel();
