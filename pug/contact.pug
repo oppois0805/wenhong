@@ -1,0 +1,50 @@
+extends templates/_layout.pug
+
+block main
+    .bg-faded.p-4.my-4
+        hr.divider
+        h2.text-center.text-lg.text-uppercase.my-0
+            | Contact
+            strong Business Casual
+        hr.divider
+        .row
+            .col-lg-8
+                .embed-responsive.embed-responsive-16by9.map-container.mb-4.mb-lg-0
+                    iframe(frameborder="0", scrolling="no", marginheight="0", marginwidth="0", src="http://maps.google.com/maps?hl=en&ie=UTF8&ll=37.0625,-95.677068&spn=56.506174,79.013672&t=m&z=4&output=embed")
+            .col-lg-4
+                h5.mb-0 Phone:
+                .mb-4 123.456.7890
+                h5.mb-0 Email:
+                .mb-4
+                    a(href="mailto:name@example.com") name@example.com
+                h5.mb-0 Address:
+                .mb-4
+                    | 3481 Melrose Place
+                    br
+                    |               Beverly Hills, CA 90210
+    .bg-faded.p-4.my-4
+        hr.divider
+        h2.text-center.text-lg.text-uppercase.my-0
+            | Contact
+            strong Form
+        hr.divider
+        form(action="mailto:no3111000@gmail.com", enctype="text/plain", method="post")
+            .row
+                .form-group.col-lg-4
+                    label.text-heading Name
+                    input.form-control(type="text")
+                .form-group.col-lg-4
+                    label.text-heading Email Address
+                    input.form-control(type="email")
+                .form-group.col-lg-4
+                    label.text-heading Phone Number
+                    input.form-control(type="tel")
+                .clearfix
+                .form-group.col-lg-12
+                    label.text-heading#message Message
+                    textarea.form-control(rows="6")
+                .form-group.col-lg-12
+                    button.btn.btn-secondary(onclick="sendMail(); return false") Submit
+block script
+    script(type='text/javascript').
+        
