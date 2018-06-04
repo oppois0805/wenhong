@@ -4,7 +4,7 @@ block main
 	.bg-faded.p-4.my-4
 		hr.divider
 		h2.text-center.text-lg.text-uppercase.my-0
-			strong 產品項目11111
+			strong 產品項目
 		hr.divider
 		// Image Carousel
 		#carouselExampleIndicators.carousel.slide(data-ride="carousel")
@@ -12,22 +12,39 @@ block main
 				li.active(data-target="#carouselExampleIndicators", data-slide-to="0")
 				li(data-target="#carouselExampleIndicators", data-slide-to="1")
 				li(data-target="#carouselExampleIndicators", data-slide-to="2")
+				li(data-target="#carouselExampleIndicators", data-slide-to="3")
+				li(data-target="#carouselExampleIndicators", data-slide-to="4")
+				li(data-target="#carouselExampleIndicators", data-slide-to="5")
+				li(data-target="#carouselExampleIndicators", data-slide-to="6")
 			.carousel-inner(role="listbox")
 				.carousel-item.active
+					img.d-block.img-fluid.w-100(src="images/文香珍相簿_180604_0010.jpg", alt="")
+					.carousel-caption.d-none.d-md-block
+						h3.text-shadow 罐裝魚鬆
+				.carousel-item
+					img.d-block.img-fluid.w-100(src="images/文香珍相簿_180604_0009.jpg", alt="")
+					.carousel-caption.d-none.d-md-block
+						h3.text-shadow 罐裝魚鬆
+				.carousel-item
+					img.d-block.img-fluid.w-100(src="images/文香珍相簿_180604_0021.jpg", alt="")
+					.carousel-caption.d-none.d-md-block
+						h3.text-shadow 袋裝魚鬆
+				.carousel-item
+					img.d-block.img-fluid.w-100(src="images/文香珍相簿_180604_0026.jpg", alt="")
+					.carousel-caption.d-none.d-md-block
+						h3.text-shadow 袋裝魚鬆
+				.carousel-item
 					img.d-block.img-fluid.w-100(src="images/旗魚脯.jpg", alt="")
 					.carousel-caption.d-none.d-md-block
 						h3.text-shadow 旗魚脯
-						p.text-shadow This is the caption for the first slide.
 				.carousel-item
 					img.d-block.img-fluid.w-100(src="images/旗魚顆粒.jpg", alt="")
 					.carousel-caption.d-none.d-md-block
 						h3.text-shadow 旗魚顆粒
-						p.text-shadow This is the caption for the second slide.
 				.carousel-item
 					img.d-block.img-fluid.w-100(src="images/旗魚鬆.jpg", alt="")
 					.carousel-caption.d-none.d-md-block
 						h3.text-shadow 旗魚鬆
-						p.text-shadow This is the caption for the third slide.
 			a.carousel-control-prev(href="#carouselExampleIndicators", role="button", data-slide="prev")
 				span.carousel-control-prev-icon(aria-hidden="true")
 				span.sr-only Previous

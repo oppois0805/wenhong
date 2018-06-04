@@ -2,7 +2,6 @@
   "name": "iwa_back",
   "version": "1.0.0",
   "sasslintConfig": "config/.sass-lint.yml",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +21,26 @@
     "gulp-sass-lint": "^1.3.2",
     "gulp-uglify": "^2.1.0",
     "jshint": "^2.9.4"
-  }
+  },
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-pug": "^4.0.1",
+    "lightgallery.js": "^1.0.2",
+    "postcss-cssnext": "^3.1.0",
+    "sax": "^1.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oppois0805/Wenhong.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/oppois0805/Wenhong/issues"
+  },
+  "homepage": "https://github.com/oppois0805/Wenhong#readme",
+  "description": ""
 }
