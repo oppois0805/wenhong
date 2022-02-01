@@ -1,0 +1,37 @@
+.image-container {
+  max-width: 60%;
+  margin: 0 20%;
+}
+
+.image {
+  height: calc(19vh + 17vw);
+  margin-right: .6vw;
+}
+
+.image--left {
+  float: left;
+  margin-right: .6vw;
+}
+
+.image--right {
+  float: right;
+  margin-top: 2vh;
+  margin-bottom: .2vh;
+  margin-left: .6vw;
+}
+
+.index_block {
+  p {
+    font-size: 20px;
+  }
+}
+
+//手機
+@media all and (max-width: 480px) {
+  .index_block {
+    >img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

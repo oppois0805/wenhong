@@ -6,6 +6,12 @@
 // *************************************
 
 // -------------------------------------
+//   Vendor
+// -------------------------------------
+
+@import "vendor/stylesheets/bootstrap/bootstrap";
+
+// -------------------------------------
 //   Foundation
 // -------------------------------------
 
@@ -23,14 +29,10 @@
 //   Structures
 // -------------------------------------
 
+@import "structures/product";
 @import "structures/layout";
 @import "structures/light";
-
-// -------------------------------------
-//   Vendor
-// -------------------------------------
-
-@import "vendor/stylesheets/bootstrap/bootstrap";
+@import "structures/index";
 
 // -------------------------------------
 //   Foundation - Tools

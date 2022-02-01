@@ -1,9 +1,12 @@
 /* ==========================================================================
    base
    ========================================================================== */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+    * {
+        font-family: 'Noto Sans TC' !important;
+    }
 
 body {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     background: url('../images/bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;

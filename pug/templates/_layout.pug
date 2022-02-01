@@ -12,12 +12,16 @@ html(lang="en")
 		link(href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800", rel="stylesheet", type="text/css")
 		link(href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic", rel="stylesheet", type="text/css")
 	body
-		.tagline-upper.text-center.text-heading.text-shadow.text-white.mt-5.d-none.d-lg-block 文香珍 魚鬆專業
-		.tagline-lower.text-center.text-expanded.text-shadow.text-uppercase.text-white.mb-5.d-none.d-lg-block 3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890
+		.tagline-upper.text-center.text-heading.text-shadow.text-white.mt-5.d-none.d-lg-block.title
+			img(src="images/文香珍.png", alt="")
+			span 魚鬆專業
+		.tagline-lower.text-center.text-expanded.text-shadow.text-uppercase.text-white.mb-5.d-none.d-lg-block
 		// Navigation
 		nav.navbar.navbar-expand-lg.navbar-light.bg-faded.py-lg-4
 			.container
-				a.navbar-brand.text-uppercase.text-expanded.font-weight-bold.d-lg-none(href="#") 文香珍 魚鬆專業
+				a.navbar-brand.text-uppercase.text-expanded.font-weight-bold.d-lg-none(href="#").title_mobile
+					img(src="images/文香珍.png", alt="")
+					div 魚鬆專業
 				button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarResponsive", aria-controls="navbarResponsive", aria-expanded="false", aria-label="Toggle navigation")
 					span.navbar-toggler-icon
 				#navbarResponsive.collapse.navbar-collapse
@@ -27,9 +31,15 @@ html(lang="en")
 								| 首頁
 								span.sr-only (current)
 						li.nav-item.px-lg-4
-							a.nav-link.text-uppercase.text-expanded(href="about.html") 產品包裝
+							a.nav-link.text-uppercase.text-expanded(href="product.html") 產品介紹
 						li.nav-item.px-lg-4
-							a.nav-link.text-uppercase.text-expanded(href="product.html") 產品項目
+							a.nav-link.text-uppercase.text-expanded(href="package.html") 產品包裝
+						//- li.nav-item.px-lg-4
+						//- 	a.nav-link.text-uppercase.text-expanded(href="label.html") 產品標籤
+						li.nav-item.px-lg-4
+							a.nav-link.text-uppercase.text-expanded(href="report.html") 檢驗報告
+						li.nav-item.px-lg-4
+							a.nav-link.text-uppercase.text-expanded(href="environment.html") 工廠環境
 						li.nav-item.px-lg-4
 							a.nav-link.text-uppercase.text-expanded(href="contact.html") 聯繫我們
 		.container
@@ -37,7 +47,7 @@ html(lang="en")
 		// /.container
 		footer.bg-faded.text-center.py-5
 			.container
-				p.m-0 Copyright © Your Website 2018
+				p.m-0 文香珍 © 2019
 		// Bootstrap core JavaScript
 		script(src="js/all.min.js")
 		block script

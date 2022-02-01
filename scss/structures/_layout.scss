@@ -2,47 +2,120 @@
    撰寫layout
    ========================================================================== */
 
+@font-face {
+  font-family: NotoSansCJKtc;
+  src: url(../fonts/NotoSansCJKtc-Regular.otf);
+}
+
+* {
+  font-size: 16px;
+  font-family: NotoSansCJKtc, serif !important;
+}
+
+.navbar-collapse {
+  a {
+    font-size: calc(.7vw + .7vh);
+  }
+}
+
+//手機
+@media all and (max-width: 480px) {
+  .navbar-collapse {
+    a {
+      font-size: 15px;
+    }
+  }
+}
+
+.title {
+  >img {
+    margin-right: 1.5vw;
+  }
+
+  >span {
+    color: #2145ff;
+    margin-top: 1vh;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .title {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  p {
+    font-size: calc(1vw + 1vh);
+  }
+}
+
+//手機
+@media all and (max-width: 480px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+.title_mobile {
+  display: flex;
+  align-items: center;
+  >img {
+    height: 6vh;
+    margin-right: 2.5vw
+  }
+}
+
 .tagline-upper {
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 1;
-  }
-  
-  .tagline-lower {
-    font-size: 1.2rem;
-    line-height: 1;
-  }
-  
-  .text-expanded {
-    letter-spacing: 2px;
-  }
-  
-  .text-shadow {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-  
-  .text-lg {
-    font-size: 1.25rem;
-  }
-  
-  .bg-faded {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  
-  .bg-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  hr.divider {
-    border-color: #292b2c;
-    max-width: 250px;
-  }
-  
-  .map-container iframe {
-    pointer-events: none;
-  }
-  
-  .map-container iframe.clicked {
-    pointer-events: auto;
-  }
-  
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tagline-lower {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.text-expanded {
+  letter-spacing: 2px;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-lg {
+  font-size: 1.25rem;
+}
+
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+hr.divider {
+  border-color: #292b2c;
+  max-width: 250px;
+}
+
+.map-container iframe {
+  pointer-events: none;
+}
+
+.map-container iframe.clicked {
+  pointer-events: auto;
+}
+
+//block
+.block_title {
+  font-size: 28px;
+}
+
+p {
+  line-height: 2;
+  font-weight: 700;
+}
